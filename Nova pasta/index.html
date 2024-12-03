@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">   
+<head>
+    <link rel="stylesheet" href=".css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Academia</title>
+</head>
+<body>
+    <form action="enviado.html" method="post">
+
+        <label for="nome"> Nome Receita:</label>
+        <input type="text" name="nome" id="nome"
+        required = "required" autofocus><br>
+        <label for="text"> Categoria:</label>
+        <input type="categoria" name="categoria" id="categoria" required
+        placeholder="exemplo: carnes,massas,caldos e etc.."><br>
+        <label for="telefone"> Ingredientes:</label>
+        <input type="text" name="ingredientes" id="ingredientes"
+        required><br>
+        <label for="text">Modo de Preparo:</label>
+        <input type="text" name="modo de preparo" id="modo de preparo"
+        required><br>
+        
+        <label for="time" class="time">Tempo de Preparo:</label>
+        <input type="time"name= "tempo" id="tempo"
+        class="time"> <br>
+       
+
+        <label for="foto"> Foto da Receita:</label>
+        <input type="file" name="foto" id="foto" required><br>
+        
+        <label> Dificuldade: </label>
+        <input class="emlinha" type="radio" name="plano"
+        id="facil">
+        <label class="emlinha" for="semanal"> Facil</label>
+        <input class="emlinha" type="radio" name="plano"
+        id="medio">
+        <label class="emlinha" for="mensal">Medio </label>
+        <input class="emlinha" type="radio" name="plano"
+        id="dificil">
+        <label class="emlinha" for="anual">Dificil</label>
+        <br><br>
+        <label for="nome"> Seu Nome:</label>
+        <input type="text" name="nome" id="nome"
+        required = "required" autofocus><br>
+
+        <label for="nome"> Seu email:</label>
+        <input type="email" name="nome" id="nome"
+        required = "required" placeholder="exemplo nathylinda@gmail.com" autofocus><br>
+        <br>
+
+
+        <br>
+        <label>Comentarios adicionais: </label>
+        <textarea name="Informações" cols="25" rows="8"
+        maxlenght="100" required placeholder="Escreva Informações adicionais que julgar importante"></textarea>
+        <br>
+        <input type="submit" name="enviar" value="Enviar" id="enviar">
+        <p>
+        <input type="submit" value="Enviar (Simulação)" id="enviar">
+        </p>
+        </form>
+</body>
+</html>
